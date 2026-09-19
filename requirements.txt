@@ -1,0 +1,14 @@
+# env "vgs" : LLaVA-Med (HF conversion) + MedGemma. Tested in CPU unit tests with torch 2.6.0 / transformers 4.56.2
+torch>=2.6          # Gemma3 (MedGemma) attention masks need torch>=2.6
+transformers==4.56.2
+accelerate
+datasets
+pillow
+numpy
+pandas
+tqdm
+pytest
+# optional
+# bitsandbytes      # --load_in_4bit (changes numbers; use only if GPU memory forces it)
+# torchvision       # --noise_mode vase_full ablation
+# flash-attn
